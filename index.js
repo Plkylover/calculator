@@ -10,7 +10,7 @@ const clear = () => {
 clearBtn.addEventListener("click", clear)
 const addline = (arg, type) => {
     let access = false
-    if (type == 'opra' && (digits !== "" || arg == "-")) {
+    if (type == 'opra' && (screen.innerHTML == "" && arg == "-" || screen.innerHTML !== "")) {
         digits = ""
         access = true
     }
